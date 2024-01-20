@@ -1,6 +1,38 @@
+:root {
+  --mist: rgba(122, 161, 164, 0.811);
+  --fog: rgba(202, 231, 234, 0.811);
+  --branch: rgba(168, 223, 155, 0.751);
+  --tree: rgba(80, 123, 70, 0.664);
+  --trunk: rgba(29, 49, 25, 0.664);
+  --shadow: rgba(6, 10, 7, 0.664);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--fog);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: var(--shadow);
+  line-height: 1.5;
+}
+
+nav {
+  background-color: var(--mist);
+  font-size: 1.2rem;
+  color: var(--shadow);
+}
+
+.navlink {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.navigation {
+  text-decoration: none;
+}
